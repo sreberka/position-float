@@ -1,0 +1,117 @@
+/*---------------------fonts--------------------------*/
+@font-face {
+    font-family: MyriadProRegular;
+    src: url("../fonts/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular.woff");
+    src: url("../fonts/MyriadProRegular.ttf");
+    src: url("../fonts/MyriadProRegular.otf");
+}
+
+/*--------------------general---------------------------*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+    width: 100%;
+    font-size: 100%;
+    font-family: MyriadProRegular;
+    position: relative;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 605px;
+    margin: 10% auto;
+    position: relative;
+}
+/*--------------------gray blocks--------------------------*/
+.gray-block,.gray-block-2,.gray-block-3{
+    border: 2px solid #000000;
+    padding: 30px;
+    width: 100%;
+}
+.gray-block{
+    position: relative;
+    background-color: #ebebeb;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+.gray-block-2,.gray-block-3{
+    position: absolute;
+}
+.gray-block-2{
+    background-color: #cccccc;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    height: 100%
+}
+.gray-block-3{
+    background-color: #acacac;
+    left: 40px;
+    top: 40px;
+    z-index: 1;
+    height: 100%;
+}
+.gray-block:after,.gray-block-2:after,.gray-block-3:after{
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 111px;
+    position: absolute;
+    top: 38px;
+    border: 2px solid #000000;
+    border-radius: 0 10px 10px 0;
+}
+.gray-block:after{
+    right: -84px;
+    background-color: #f68e56;
+}
+.gray-block-2:after{
+    right: -50px;
+    background-color: #39b54a;
+}
+.gray-block-3:after{
+    right: -16px;
+    background-color: #00aeef;
+}
+.cup{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.note{
+    float: right;
+    margin: 0 0 0 20px;
+}
+.joke-block img{
+    margin-bottom: 15px;
+}
+.joke-block img:first-of-type{
+    float: left;
+}
+.joke-block img:last-of-type{
+    float: right;
+}
+footer{
+    text-align: center;
+    font-size: 0.7em;
+}
+/*-------------------------share buttons-------------------------*/
+.share-buttons{
+    position: fixed;
+    top: 60%;
+    right: 0;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #fbaf5d;
+    padding: 5px 0;
+}
+.share-buttons img{
+    margin: 5px;
+}
