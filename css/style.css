@@ -19,6 +19,7 @@ body{
     font-size: 100%;
     font-family: MyriadProRegular;
     position: relative;
+    margin: 0;
 }
 .clear{
     clear: both;
@@ -105,7 +106,7 @@ footer{
 /*-------------------------share buttons-------------------------*/
 .share-buttons{
     position: fixed;
-    top: 60%;
+    bottom: 0;
     right: 0;
     text-align: center;
     border: 1px solid #000000;
