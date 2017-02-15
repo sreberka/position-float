@@ -21,8 +21,12 @@ body{
     position: relative;
     margin: 0;
 }
-.clear{
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
     clear: both;
+    visibility: hidden;
 }
 .container{
     width: 605px;
@@ -30,6 +34,15 @@ body{
     position: relative;
 }
 /*--------------------gray blocks--------------------------*/
+h1{
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+}
+h2{
+    font-size: 18px;
+}
 .gray-block,.gray-block-2,.gray-block-3{
     border: 2px solid #000000;
     padding: 30px;
@@ -101,7 +114,7 @@ body{
 }
 footer{
     text-align: center;
-    font-size: 0.7em;
+    font-size: 9px;
 }
 /*-------------------------share buttons-------------------------*/
 .share-buttons{
@@ -112,6 +125,9 @@ footer{
     border: 1px solid #000000;
     background-color: #fbaf5d;
     padding: 5px 0;
+}
+.share-buttons p{
+    font-size: 16px;
 }
 .share-buttons img{
     margin: 5px;
